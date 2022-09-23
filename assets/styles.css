@@ -1,31 +1,68 @@
+:root {
+	--bckgrnd-clr: #ffffff34;
+	--card-clr: rgb(187, 8, 133);
+	--text-clr: #fff;
+}
+
 *{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+body{
+background-color: rgb(66, 65, 65);
 }
-body {
-	line-height: 1;
+
+header{
+	background-color:  rgb(66, 65, 65);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
 }
-ol, ul {
-	list-style: none;
+
+h1{
+	color: rgb(187, 8, 133);
+	font-size: 40px;
 }
-blockquote, q {
-	quotes: none;
+
+header p{
+	color: white;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+main{
+	background-color: rgb(66, 65, 65);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.card{
+	background-color:  rgb(66, 65, 65);
+	border: dotted 5px white;
+	display: flex;
+	flex-direction: column;
+	width: 27%;
+	height: 600px;
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.card h2{
+	border:rgb(187, 8, 133);
+	font-size: 30px;
+}
+
+.card p{
+	color:white;
+}
+
+.card pre{
+	background-image: linear-gradient(rgb(187, 8, 133, 0.3) 0%, rgb(187, 8, 133, 0.6) 100%);
+	width: 90%;
+	height: 66%;
 }
