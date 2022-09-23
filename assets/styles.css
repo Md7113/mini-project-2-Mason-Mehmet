@@ -1,5 +1,5 @@
 :root {
-	--bckgrnd-clr: #ffffff34;
+	--bckgrnd-clr:rgb(66, 65, 65);
 	--card-clr: rgb(187, 8, 133);
 	--text-clr: #fff;
 }
@@ -9,11 +9,11 @@
 }
 
 body{
-background-color: rgb(66, 65, 65);
+background-color: var(--bckgrnd-clr);
 }
 
 header{
-	background-color:  rgb(66, 65, 65);
+	background-color:  var(--bckgrnd-clr);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -27,11 +27,11 @@ h1{
 }
 
 header p{
-	color: white;
+	color: var(--text-clr);
 }
 
 main{
-	background-color: rgb(66, 65, 65);
+	background-color: var(--bckgrnd-clr);
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -39,8 +39,8 @@ main{
 }
 
 .card{
-	background-color:  rgb(66, 65, 65);
-	border: dotted 5px white;
+	background-color:  var(--bckgrnd-clr);
+	border: dotted 5px  var(--text-clr);
 	display: flex;
 	flex-direction: column;
 	width: 27%;
@@ -48,21 +48,53 @@ main{
 	margin: 30px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	text-align: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgba(128, 128, 128, 0.288);
 }
 
 .card h2{
-	border:rgb(187, 8, 133);
+	border: var(--text-clr);
 	font-size: 30px;
 }
 
 .card p{
-	color:white;
+	color: var(--text-clr);
 }
 
 .card pre{
+    user-select: all;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--text-clr);
+    font-size: 25px;
+    border-radius: 10px;
 	background-image: linear-gradient(rgb(187, 8, 133, 0.3) 0%, rgb(187, 8, 133, 0.6) 100%);
 	width: 90%;
 	height: 66%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 150px;
+}
+
+@media screen and (max-width: 992px){
+    .card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 85%;
+    }
 }
