@@ -49,12 +49,13 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	text-align: center;
+
     align-items: center;
+    transition: all 2s ease-in-out;
 }
 
 .card:hover {
-    background-color: rgba(128, 128, 128, 0.288);
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 .card h2{
@@ -68,9 +69,8 @@ main{
 
 .card pre{
     user-select: all;
-    display:flex;
-    justify-content: left;
-    align-items: center;
+    display:block;
+    text-align: none;
     color: var(--text-clr);
     font-size: 25px;
     border-radius: 10px;
